@@ -14,8 +14,8 @@ public partial class GodoTeX : EditorPlugin {
 		AddCustomType("LaTeX3D", "Sprite3D", spatial_script, texture_red);
 		
 		var texture = GD.Load<Texture2D>("addons/GodoTeX/icon.svg");
-		var script = GD.Load<Script>("addons/GodoTeX/LaTeX.cs");
-		AddCustomType("LaTeX", "Sprite2D", script, texture);
+		var script = GD.Load<Script>("addons/GodoTeX/LaTeX2D.cs");
+		AddCustomType("LaTeX2D", "Sprite2D", script, texture);
 		
 		var texture_button = GD.Load<Texture2D>("addons/GodoTeX/iconButton.svg");
 		var button_script = GD.Load<Script>("addons/GodoTeX/LaTeXButton.cs");
@@ -23,11 +23,10 @@ public partial class GodoTeX : EditorPlugin {
 	}
 
 	public override void _ExitTree() {
-		RemoveCustomType("LaTeX");
+		RemoveCustomType("LaTeX2D");
 		RemoveCustomType("LaTeX3D");
 		RemoveCustomType("LaTeXture");
 		RemoveCustomType("LaTeXButton");
 	}
 }
 #endif
-

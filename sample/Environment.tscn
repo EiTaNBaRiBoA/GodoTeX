@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8ne7pqtnju2y"]
 
-[ext_resource type="Script" path="res://addons/GodoTeX/LaTeX.cs" id="1"]
+[ext_resource type="Script" path="res://addons/GodoTeX/LaTeX2D.cs" id="1"]
 [ext_resource type="Script" path="res://sample/UpdateLatex.gd" id="2"]
 
 [sub_resource type="Image" id="Image_rn8st"]
@@ -18,7 +18,7 @@ image = SubResource("Image_rn8st")
 [node name="Environment" type="Node2D"]
 position = Vector2(319, 195)
 
-[node name="LaTeX" type="Sprite2D" parent="."]
+[node name="LaTeX2D" type="Sprite2D" parent="."]
 position = Vector2(75, -14)
 texture = SubResource("ImageTexture_kluqf")
 offset = Vector2(100, 100)
